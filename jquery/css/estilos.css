@@ -5,11 +5,19 @@
     background-color:blue;
     width:800px;
     height:50px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    font-family: Arial;
+    font-size: larger;
+    color: white;
 }
 
 .div-dos {
     background-color:chartreuse;
-    height:100px;
+    height:50px;
     width:100px;;
 }
 
