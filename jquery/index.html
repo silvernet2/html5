@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Example Title</title>
+        <meta name="author" content="Your Name">
+        <meta name="description" content="Example description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href=""/>
+    </head>
+    <body>
+        <head></head>
+        <main>
+             <div class="div-prueba">
+                Hola
+             </div>   
+             <div class="div-dos">
+                    <span> es otro div, </span>
+             </div>
+        </main>
+        <footer></footer>
+
+        <script>
+            $(document).ready(function(){
+                  $(".div-prueba").click(function(){
+                      alert("alerta");
+                      $(".div-dos").toggle();
+                  });  
+            });
+        </script>
+    </body>
+</html>
