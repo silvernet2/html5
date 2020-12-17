@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+@keyframes pulsa{
+    
+    from{}
+    
+    to{}
+}
+
+.menu_mobile {
+    
+    padding-top: 15px;
+    font-family: 'Oswald';
+    font-size: 17px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 5px 17px -4px rgba(0,0,0,0.3);
+    width: 99%;
+    height: 270px;
+    left: 5px;
+    right: 5px;
+    position: absolute;
+    top: 50px;
+    display: none;
+    
+
+
+        
+}
+
+
+li {
+    padding-bottom: 12px;
+}
+
+#close_menu {
+    position: absolute;
+    top:18px;
+    right: 18px;
+    z-index: 55;
+    color: black;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.lista_menu {
+        list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor:pointer;
+    
+}
+
+body {
+    background-color: black;
+}
+
+.botones_menu {
+    height: 30px;
+    padding-left: 18px;
+}
+
+.logo_servicio {
+    height: 40px;
+}
+
+.boton {
+    float: left;
+    padding-left: 20px;
+}
+
+.contenedor {
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+
+        
+    /* Flex-box */    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburguesa {
+    height: 15%;
+    background-color: black;
+   
+}
+
+.hamburguesa:after, 
+.hamburguesa:before,
+.hamburguesa{
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    content: '';
+    background-color: black;
+    
+}
+
+.hamburguesa:after {
+    top: 6px;
+    height: 100%;
+}
+
+.hamburguesa:before {
+    top: -6px;
+    height: 100%;
+}
+
+.cruz {
+    transition: 1s;
+    transform: rotateZ(45deg);
+    
+}
+
+.cruz:before {
+    transition: 1s;
+    top: 0px;
+    transform: rotateZ(90deg);
+}
+
+.cruz:after{
+    transition: 1s;
+    top: 0px;
+    transform: rotateZ(0deg);
+    
+}

@@ -1,0 +1,78 @@
+<! DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="max-age=220" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:500" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>practicas de tarjetas</title>
+    </head>
+
+    <body>
+        
+    <ul id="c"> 
+		
+        <li><p><strong><img src="img/empresa1.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa2.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa3.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa4.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+
+		<li><p><strong><img src="img/empresa5.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa6.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa7.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa8.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
+
+		<li><p><strong><img src="img/empresa9.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><img src="img/empresa10.jpg" style="width: 90%"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><i class="material-icons" >pan_tool</i></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p><strong><i class="material-icons" >perm_contact_calendar</i></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
+
+	</ul>
+        
+    <script>
+        $(document).ready(function() {
+        var timer = 4000;
+
+        var i = 0;
+        var max = $('#c > li').length;
+
+        $("#c > li").eq(i).addClass('active').css('left','0');
+        $("#c > li").eq(i + 1).addClass('active').css('left','25%');
+        $("#c > li").eq(i + 2).addClass('active').css('left','50%');
+        $("#c > li").eq(i + 3).addClass('active').css('left','75%');
+
+
+        setInterval(function(){ 
+
+                $("#c > li").removeClass('active');
+
+                $("#c > li").eq(i).css('transition-delay','0.25s');
+                $("#c > li").eq(i + 1).css('transition-delay','0.5s');
+                $("#c > li").eq(i + 2).css('transition-delay','0.75s');
+                $("#c > li").eq(i + 3).css('transition-delay','1s');
+
+                if (i < max-4) {
+                    i = i+4; 
+                }
+
+                else { 
+                    i = 0; 
+                }  
+
+                $("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+                $("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+                $("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+                $("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+
+            }, timer);
+
+        });
+
+    </script>
+        
+    </body>    

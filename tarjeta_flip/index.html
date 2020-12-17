@@ -1,0 +1,114 @@
+<! DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="max-age=220" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js'></script>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>practicas de tarjetas</title>
+
+        
+    </head>
+
+    <body>
+        <div class="card-container">
+          <div class="card" id="uno">
+            <div class="front" id="front_uno">
+              <div class="front-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>     
+           
+            </div>
+            <div class="back">
+              A
+            </div>
+          </div>
+          <div class="espacio_card"></div>  
+            
+          <div class="card" id="dos">
+                <div class="front" id="front_dos">
+                   <div class="front-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>    
+                </div>
+                <div class="logo_marca">
+                </div>  
+                <i class="material-icons icon_return">autorenew</i>
+                <div class="back">
+                  B
+                </div>
+          </div> 
+          <div class="espacio_card"></div>  
+            
+          <div class="card" id="tres">
+            <div class="front" id="front_tres">
+               <div class="front-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>     
+            </div>
+            <div class="back">
+              C
+            </div>
+          </div>     
+            
+        </div>
+   
+      <script>
+            var card3 = document.querySelector("#tres");
+            var card2 = document.querySelector("#dos");
+            var card1 = document.querySelector("#uno");
+            var playing = false;
+
+            card1.addEventListener('click',function() {
+              if(playing)
+                return;
+
+              playing = true;
+              anime({
+                targets: card1,
+                scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+                rotateY: {value: '+=180', delay: 200},
+                easing: 'easeInOutSine',
+                duration: 400,
+                complete: function(anim){
+                   playing = false;
+                }
+              });
+            });
+          
+            card2.addEventListener('click',function() {
+              if(playing)
+                return;
+
+              playing = true;
+              anime({
+                targets: card2,
+                scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+                rotateY: {value: '+=180', delay: 200},
+                easing: 'easeInOutSine',
+                duration: 400,
+                complete: function(anim){
+                   playing = false;
+                }
+              });
+            });
+          
+            card3.addEventListener('click',function() {
+              if(playing)
+                return;
+
+              playing = true;
+              anime({
+                targets: card3,
+                scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+                rotateY: {value: '+=180', delay: 200},
+                easing: 'easeInOutSine',
+                duration: 400,
+                complete: function(anim){
+                   playing = false;
+                }
+              });
+            });
+     </script>    
+        
+    </body>
+    </html>
