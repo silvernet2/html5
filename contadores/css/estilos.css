@@ -1,0 +1,26 @@
+
+body {
+    font-family: roboto;
+    padding: 25px;
+    background-color: #73142d;
+    color: #f2f2f2;
+    text-align: center;	
+  }
+  
+  
+  .col_half { width: 10px; }
+  .col_fourth { width: 150px; }
+  .col_fourth{
+      position: relative;
+      display:inline;
+      display: inline-block;
+      margin-right: 80px;
+      margin-bottom: 20px;
+  }
+  
+  .wrapper { width: 980px; margin: 30px auto; position: relative;}
+  .counter { background-color: #73142d; padding: 20px 0; border-radius: 15px; border-color: f2f2f2; border-style: solid;}
+  .count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+  .count-text { font-size: 20px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+  .fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+  
