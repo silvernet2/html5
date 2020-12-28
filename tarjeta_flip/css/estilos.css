@@ -52,6 +52,19 @@ body
     width: 100%;
     font-size: 18px;
   }
+
+  .btn-third {
+    border: none;
+    border-radius: 20px;
+    outline: 0;
+    padding: .5em .8em;
+    color: silver;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
   
   a {
     text-decoration: none;
